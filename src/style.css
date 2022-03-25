@@ -1,0 +1,66 @@
+/* Bootstrap */
+@import url("/cdn_modules/bootstrap@5.1.3/css/bootstrap.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background: #04091A;
+    color: #EBEDF6;
+    font-weight: 400 !important;
+    font-size: 18px;
+    word-wrap: break-word;
+}
+
+h1 {
+    font-weight: 700 !important;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 4rem;
+    width: 100vw;
+    padding: 15px;
+    border-bottom: 1px solid #AE99BA;
+    background: transparent;
+    backdrop-filter: blur(2px);
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+#main {
+    min-height: 100vh;
+    max-height: max-content;
+    padding-top: 8.4rem;
+}
+
+#main h1 {
+    background: -webkit-linear-gradient(#4BD5FF, #20D04C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#main .quick-btns {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.quick-btns a {
+    padding: 15px;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    border: 1px solid #BDC2D2;
+}
