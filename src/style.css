@@ -32,10 +32,15 @@ h1 {
   background: transparent;
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
-
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.no-select {
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;
 }
 
 #main {
