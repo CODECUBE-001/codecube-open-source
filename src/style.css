@@ -1,65 +1,83 @@
 /* Bootstrap */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
 }
 
 body {
-    background: #04091A;
-    color: #EBEDF6;
-    font-weight: 400 !important;
-    font-size: 18px;
-    word-wrap: break-word;
+  background: #04091a;
+  color: #ebedf6;
+  font-weight: 400 !important;
+  font-size: 18px;
+  word-wrap: break-word;
 }
 
 h1 {
-    font-weight: 700 !important;
+  font-weight: 700 !important;
 }
 
 #header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    height: 4rem;
-    width: 100vw;
-    padding: 15px;
-    border-bottom: 1px solid #AE99BA;
-    background: transparent;
-    backdrop-filter: blur(2px);
-
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 4rem;
+  width: 100vw;
+  padding: 15px;
+  border-bottom: 1px solid #bdc2d2;
+  background: transparent;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-
+.no-select {
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;
+}
 
 #main {
-    min-height: 100vh;
-    max-height: max-content;
-    padding-top: 8.4rem;
+  min-height: 100vh;
+  max-height: max-content;
+  padding-top: 8.4rem;
 }
 
 #main h1 {
-    background: -webkit-linear-gradient(#4BD5FF, #20D04C);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(#4bd5ff, #20d04c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 #main .quick-btns {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1rem;
 }
 
 .quick-btns a {
-    padding: 15px;
-    margin-bottom: 1rem;
-    font-size: 20px;
-    border: 1px solid #BDC2D2;
+  padding: 15px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 20px;
+  border: 1px solid #bdc2d2;
+  text-decoration: none;
+  border-radius: 1rem;
+  color: #d9dde9;
+  transition: all 0.15s ease-in-out;
+}
+
+.quick-btns a:hover {
+  color: #bdc2d2;
+}
+
+.join {
+  margin-right: 1rem;
 }
